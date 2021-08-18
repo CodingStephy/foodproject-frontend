@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+
 .App {
-  text-align: center;
+  text-align: center ;
+  background-color: rgb(241, 239, 216);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form{
+  height: 100vh;
+  width: 100vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +39,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App .logo{
+    width:20%;
+    height:15%;
+    z-index:10;
+    margin-top:-4%;
+    margin-bottom:-5%;
+}
+
+.App button{
+  width:90px; 
+  height:30px;
+  margin:5px; 
+  border:none; 
+  background-color:#c9e265;
+  border-radius: 2px;
+  box-shadow: 0 0 3px 0 grey;
+  transition-property: background-color;
+  transition-duration: 150ms;
+}
+
+.App button:hover{
+  background-color:yellow;
+}
+
+.display{
+  display:flex; 
+  flex-wrap:wrap; 
+  justify-content:space-around; 
+}
+
+.display img{
+  size:absolute; 
+  width:600px; 
+  height:60%;
+}
+
+.display h1{
+  font-family: 'Libre Baskerville', serif;
 }

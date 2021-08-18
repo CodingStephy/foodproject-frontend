@@ -9,7 +9,7 @@ const Display = (props) => {
         <article>
           <h1>{food.name}</h1>
           <img src={food.img} />
-          <h1>{food.taste}</h1>
+          <h2>{food.taste}</h2>
           <button onClick={()=> {
             props.selectFood(food);
             props.history.push("/edit")

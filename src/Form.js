@@ -16,25 +16,28 @@ const Form = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
+      <label for="name">Dish Name:</label>
       <input
         type="text"
         name="name"
         value={formData.name}
         onChange={handleChange}
-      />
+      /><br></br>
+      <label for="image">Dish Image:</label>
       <input
         type="text"
         name="img"
         value={formData.img}
         onChange={handleChange}
-      />
+      /><br></br>
+        <label for="description">Dish Taste:</label>
         <input
         type="text"
         name="taste"
         value={formData.taste}
         onChange={handleChange}
-      />
+      /><br></br>
       <input type="submit" value={props.label} />
     </form>
   );

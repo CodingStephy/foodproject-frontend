@@ -62,7 +62,7 @@ function App() {
 
   return (
     <div className="App">
-     <h1>Local Dishes</h1>
+    <img className ="logo" src="https://res.cloudinary.com/dt5zbnwvr/image/upload/v1629235302/Orange_Minimalist_Food_Festival_Logo_iadv6y.png"></img>
      <hr/>
      <Link to="/create">
         <button>Add Dishes</button>
