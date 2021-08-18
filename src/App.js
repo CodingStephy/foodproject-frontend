@@ -65,7 +65,7 @@ function App() {
     <img className ="logo" src="https://res.cloudinary.com/dt5zbnwvr/image/upload/v1629235302/Orange_Minimalist_Food_Festival_Logo_iadv6y.png"></img>
      <hr/>
      <Link to="/create">
-        <button>Add Dishes</button>
+        <button>Add a Dish</button>
       </Link>
      <main>
         <Switch>
@@ -78,7 +78,7 @@ function App() {
             exact
             path="/create"
             render={(rp) => (
-              <Form {...rp} label="create" food={emptyFood} handleSubmit={handleCreate} />
+              <Form {...rp} label="Submit" food={emptyFood} handleSubmit={handleCreate} />
             )}
           />
            <Route
